@@ -1,6 +1,7 @@
 package com.janseon.cardmenuview.app;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -260,7 +261,7 @@ public class MainActivity extends BaseActivity implements OnItemClickListener  {
             return;
         }
         super.onBackPressed();
-
+//
 //        DialogUtil.showAlert(_this(), "是否要退出应用程序？", "退出", new DialogInterface.OnClickListener() {
 //            @Override
 //            public void onClick(DialogInterface dialog, int which) {
