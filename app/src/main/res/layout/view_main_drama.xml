@@ -6,16 +6,20 @@
     android:layout_marginLeft="-9dip"
     android:layout_marginRight="-9dip"
     android:layout_marginTop="-14dip"
-    android:background="@drawable/bg_card">
+    android:background="@drawable/bg222">
 
     <TextView
+        android:id="@+id/drama_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="9.3dip"
         android:layout_marginRight="9.3dip"
         android:layout_marginTop="60dip"
-        android:background="@android:color/white"
+        android:background="@drawable/bg1"
         android:gravity="center"
-        android:text="剧本 内容" />
+        android:text="卫星导航系统是重要的空间信息基础设施。中国高度重视卫星导航系统的建设，一直在努力探索和发展拥有自主知识产权的卫星导航系统。2000年，首先建成北斗导航试验系统，使我国成为继美、俄之后的世界上第三个拥有自主卫星导航系统的国家。该系统已成功应用于测绘、电信、水利、渔业、交通运输、森林防火、减灾救灾和公共安全等诸多领域，产生显著的经济效益和社会效益。特别是在2008年北京奥运会、汶川抗震救灾中发挥了重要作用。为了更好地服务于国家建设与发展，满足全球应用需求，我国启动实施了北斗卫星导航系统建设。
+        北斗卫星导航系统的建设与发展，以应用推广和产业发展为根本目标，不仅要建成系统，更要用好系统，强调质量、安全、应用、效益，遵循以下建设原则：
+1、开放性。北斗卫星导航系统的建设、发展和应用将对全世界开放，为全球用户提供高质量的免费服务，积极与世界各国开展广泛而深入的交流与合作，促进各卫星导航系统间的兼容与互操作，推动卫星导航技术与产业的发展。
+2、自主性。中国将自主建设和运行北斗卫星导航系统，北斗卫星导航系统可独立为全球用户提供服务。" />
 
 </RelativeLayout>

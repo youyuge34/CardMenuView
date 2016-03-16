@@ -5,17 +5,22 @@
     android:layout_height="match_parent"
     android:layout_marginLeft="-9dip"
     android:layout_marginRight="-9dip"
-    android:layout_marginTop="-14dip"
-    android:background="@drawable/bg_card">
+    android:layout_marginTop="-14dip">
 
     <TextView
+        android:id="@+id/creative_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="9.3dip"
         android:layout_marginRight="9.3dip"
         android:layout_marginTop="60dip"
-        android:background="@android:color/white"
+        android:background="@drawable/bg1"
         android:gravity="center"
-        android:text="主创 内容" />
+        android:text="中国北斗卫星导航系统（BeiDou Navigation Satellite System，BDS）是中国自行研制的全球卫星导航系统。是继美国全球定位系统（GPS）、俄罗斯格洛纳斯卫星导航系统（GLONASS）之后第三个成熟的卫星导航系统。北斗卫星导航系统（BDS）和美国GPS、俄罗斯GLONASS、欧盟GALILEO，是联合国卫星导航委员会已认定的供应商。
+北斗卫星导航系统由空间段、地面段和用户段三部分组成，可在全球范围内全天候、全天时为各类用户提供高精度、高可靠定位、导航、授时服务，并具短报文通信能力，已经初步具备区域导航、定位和授时能力，定位精度10米，测速精度0.2米/秒，授时精度10纳秒。
+2012年12月27日，北斗系统空间信号接口控制文件正式版1.0正式公布，北斗导航业务正式对亚太地区提供无源定位、导航、授时服务。
+2013年12月27日，北斗卫星导航系统正式提供区域服务一周年新闻发布会在国务院新闻办公室新闻发布厅召开，正式发布了《北斗系统公开服务性能规范（1.0版）》和《北斗系统空间信号接口控制文件（2.0版）》两个系统文件。
+2014年11月23日，国际海事组织海上安全委员会审议通过了对北斗卫星导航系统认可的航行安全通函，这标志着北斗卫星导航系统正式成为全球无线电导航系统的组成部分，取得面向海事应用的国际合法地位。
+中国的卫星导航系统已获得国际海事组织的认可。" />
 
 </RelativeLayout>

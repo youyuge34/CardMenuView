@@ -9,56 +9,56 @@
         android:id="@+id/layout_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_header"
+        android:background="@drawable/tbsf"
         android:paddingBottom="36dip"
         android:paddingLeft="24dip"
         android:paddingRight="15dip"
-        android:paddingTop="36dip">
+        android:paddingTop="36dip"/>
 
-        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/img_portrait"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/img_portrait_def"
-            app:riv_corner_radius="2dip" />
+        <!--<com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/img_portrait"-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/img_portrait_def"-->
+            <!--app:riv_corner_radius="2dip" />-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="24dip"
-            android:layout_toRightOf="@id/img_portrait"
-            android:orientation="vertical">
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="24dip"-->
+            <!--android:layout_toRightOf="@id/img_portrait"-->
+            <!--android:orientation="vertical">-->
 
-            <TextView
-                android:id="@+id/txt_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="点击登录"
-                android:textColor="@android:color/white"
-                android:textSize="18sp" />
+            <!--<TextView-->
+                <!--android:id="@+id/txt_name"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="点击登录"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textSize="18sp" />-->
 
-            <TextView
-                android:id="@+id/txt_info"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dip"
-                android:text="开启你的电影梦"
-                android:textColor="@android:color/white"
-                android:textSize="14sp" />
-        </LinearLayout>
+            <!--<TextView-->
+                <!--android:id="@+id/txt_info"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="6dip"-->
+                <!--android:text="开启你的电影梦"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textSize="14sp" />-->
+        <!--</LinearLayout>-->
 
 
-        <ImageView
-            android:id="@+id/img_go"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/img_right_arrow_selector"
-            android:visibility="gone" />
-    </RelativeLayout>
+        <!--<ImageView-->
+            <!--android:id="@+id/img_go"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@drawable/img_right_arrow_selector"-->
+            <!--android:visibility="gone" />-->
+    <!--</RelativeLayout>-->
 
     <com.janseon.cardmenuview.widget.MenusLayout
         android:id="@+id/menus"

@@ -26,9 +26,11 @@ public class DramaView extends BaseCardLayout {
         int pad = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 15f, getResources().getDisplayMetrics());
         txt_title.setPadding(pad, pad, pad, pad);
         txt_title.setGravity(Gravity.CENTER_HORIZONTAL);
-        txt_title.setText("剧本");
+        txt_title.setText("今生");
         addView(txt_title, LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 
+        TextView textView = (TextView)findViewById(R.id.drama_view);
+        textView.getBackground().setAlpha(100);
         //super.findViews();
     }
 

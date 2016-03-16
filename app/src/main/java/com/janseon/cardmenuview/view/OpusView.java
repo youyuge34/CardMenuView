@@ -25,9 +25,11 @@ public class OpusView extends BaseCardLayout {
         int pad = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 15f, getResources().getDisplayMetrics());
         txt_title.setPadding(pad, pad, pad, pad);
         txt_title.setGravity(Gravity.CENTER_HORIZONTAL);
-        txt_title.setText("作品");
+        txt_title.setText("来世");
         addView(txt_title, LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 
+        TextView textView = (TextView)findViewById(R.id.opus_view);
+        textView.getBackground().setAlpha(100);
         //super.findViews();
     }
 

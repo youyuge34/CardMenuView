@@ -6,16 +6,18 @@
     android:layout_marginLeft="-9dip"
     android:layout_marginRight="-9dip"
     android:layout_marginTop="-14dip"
-    android:background="@drawable/bg_card">
+    android:background="@drawable/bg111">
 
     <TextView
+        android:id="@+id/opus_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="9.3dip"
         android:layout_marginRight="9.3dip"
         android:layout_marginTop="60dip"
-        android:background="@android:color/white"
+        android:background="@drawable/bg1"
         android:gravity="center"
-        android:text="作品 内容" />
+        android:text="北斗卫星导航系统空间段由5颗静止轨道卫星和30颗非静止轨道卫星组成，中国计划2012年左右，“北斗”系统将覆盖亚太地区，2020年左右覆盖全球。中国正在实施北斗卫星导航系统建设，已成功发射16颗北斗导航卫星。根据系统建设总体规划，2012年左右，系统将首先具备覆盖亚太地区的定位、导航和授时以及短报文通信服务能力。2020年左右，建成覆盖全球的北斗卫星导航系统。
+        北斗卫星导航系统由空间段计划由35颗卫星组成，包括5颗静止轨道卫星、27颗中地球轨道卫星、3颗倾斜同步轨道卫星。5颗静止轨道卫星定点位置为东经58.75°、80°、110.5°、140°、160°，中地球轨道卫星运行在3个轨道面上，轨道面之间为相隔120°均匀分布。至2012年底北斗亚太区域导航正式开通时，已为正式系统在西昌卫星发射中心发射了16颗卫星，其中14颗组网并提供服务，分别为5颗静止轨道卫星、5颗倾斜地球同步轨道卫星（均在倾角55°的轨道面上），4颗中地球轨道卫星（均在倾角55°的轨道面上）。" />
 
 </RelativeLayout>

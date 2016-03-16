@@ -2,6 +2,7 @@ package com.janseon.cardmenuview.app;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -83,10 +84,10 @@ public class MainActivity extends BaseActivity implements OnItemClickListener  {
         mCardLayouts[1] = mOpusView;
         mCardLayouts[2] = mDramaView;
 
-        img_portrait = (RoundedImageView) findViewById(R.id.img_portrait);
-        txt_name = (TextView) findViewById(R.id.txt_name);
-        txt_info = (TextView) findViewById(R.id.txt_info);
-        img_go = (ImageView) findViewById(R.id.img_go);
+//        img_portrait = (RoundedImageView) findViewById(R.id.img_portrait);
+//        txt_name = (TextView) findViewById(R.id.txt_name);
+//        txt_info = (TextView) findViewById(R.id.txt_info);
+//        img_go = (ImageView) findViewById(R.id.img_go);
     }
 
     @Override
@@ -107,13 +108,13 @@ public class MainActivity extends BaseActivity implements OnItemClickListener  {
 //		}
 
         ArrayList<Menu> list = new ArrayList<Menu>();
-        list.add(new Menu(R.drawable.icon_main_drama, "剧本投标"));
-        list.add(new Menu(R.drawable.icon_main_crowd, "影片众筹"));
-        list.add(new Menu(R.drawable.icon_main_sponsorship, "赞助"));
-        list.add(new Menu(R.drawable.icon_main_com_video, "视频定制"));
-        msgMenu = new Menu(R.drawable.icon_main_message, "消息");
+        list.add(new Menu(R.drawable.icon_main_drama, "智慧交通"));
+        list.add(new Menu(R.drawable.icon_main_crowd, "智慧农业"));
+        list.add(new Menu(R.drawable.icon_main_sponsorship, "智慧安保"));
+        list.add(new Menu(R.drawable.icon_main_com_video, "智慧生活"));
+        msgMenu = new Menu(R.drawable.icon_main_message, "智慧自然");
         list.add(msgMenu);
-        list.add(new Menu(R.drawable.icon_main_more, "更多"));
+        list.add(new Menu(R.drawable.icon_main_more, "关于我们"));
         MenusAdapter menusAdapter = new MenusAdapter(this, list);
         mMenusLayout.setAdapter(menusAdapter);
 
@@ -213,6 +214,27 @@ public class MainActivity extends BaseActivity implements OnItemClickListener  {
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        switch (position) {
+            case 0:
+                startDramaTenders(0);
+//                IntentUtil.gotoActivity(this, DramaTendersActivity.class);
+                break;
+            case 1:
+                startDramaTenders(1);
+                break;
+            case 2:
+                startDramaTenders(2);
+                break;
+            case 3:
+                startDramaTenders(3);
+                break;
+            case 4:
+                startDramaTenders(4);
+                break;
+            case 5:
+                startDramaTenders(5);
+                break;
+        }
 //        switch (position) {
 //            case 0:
 //                IntentUtil.gotoActivity(this, DramaTendersActivity.class);
@@ -282,8 +304,8 @@ public class MainActivity extends BaseActivity implements OnItemClickListener  {
         public View getView(int position, View convertView, final ViewGroup parent) {
             Menu menu = getItem(position);
             TextView txt = new TextView(mContext);
-            txt.setTextColor(Color.WHITE);
-            txt.setTextSize(16);
+            txt.setTextColor(Color.BLACK);
+            txt.setTextSize(10);
             txt.setGravity(Gravity.CENTER_HORIZONTAL);
             DrawableUtil.setTextDrawableTop(txt, DrawableUtil.dp2Px(mContext, 10), menu.resId);
             txt.setText(menu.text);
@@ -348,4 +370,10 @@ public class MainActivity extends BaseActivity implements OnItemClickListener  {
         void onCount(int count);
     }
 
+    private void startDramaTenders(int i){
+
+        Intent intent = new Intent(this,DramaTendersAcitivity.class);
+        intent.putExtra("position",i);
+        startActivity(intent);
+    }
 }
