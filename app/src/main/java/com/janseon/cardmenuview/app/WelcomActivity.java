@@ -11,7 +11,7 @@ import android.view.Window;
  */
 public class WelcomActivity extends Activity{
 
-    private final long SPLASH_LENTGH = 5000;
+    private final long SPLASH_LENTGH = 3000;
     Handler handler = new Handler();
 
     @Override

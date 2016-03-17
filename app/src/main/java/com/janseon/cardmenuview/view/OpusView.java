@@ -28,8 +28,8 @@ public class OpusView extends BaseCardLayout {
         txt_title.setText("来世");
         addView(txt_title, LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 
-        TextView textView = (TextView)findViewById(R.id.opus_view);
-        textView.getBackground().setAlpha(100);
+//        TextView textView = (TextView)findViewById(R.id.opus_view);
+//        textView.getBackground().setAlpha(100);
         //super.findViews();
     }
 

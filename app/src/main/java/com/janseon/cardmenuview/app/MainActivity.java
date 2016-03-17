@@ -108,13 +108,13 @@ public class MainActivity extends BaseActivity implements OnItemClickListener  {
 //		}
 
         ArrayList<Menu> list = new ArrayList<Menu>();
-        list.add(new Menu(R.drawable.icon_main_drama, "智慧交通"));
-        list.add(new Menu(R.drawable.icon_main_crowd, "智慧农业"));
-        list.add(new Menu(R.drawable.icon_main_sponsorship, "智慧安保"));
-        list.add(new Menu(R.drawable.icon_main_com_video, "智慧生活"));
-        msgMenu = new Menu(R.drawable.icon_main_message, "智慧自然");
+        list.add(new Menu(R.drawable.transport1, "智慧交通"));
+        list.add(new Menu(R.drawable.sheep3, "智慧农业"));
+        list.add(new Menu(R.drawable.security2, "智慧安保"));
+        list.add(new Menu(R.drawable.life, "智慧生活"));
+        msgMenu = new Menu(R.drawable.nature, "智慧自然");
         list.add(msgMenu);
-        list.add(new Menu(R.drawable.icon_main_more, "关于我们"));
+        list.add(new Menu(R.drawable.aboutus, "关于我们"));
         MenusAdapter menusAdapter = new MenusAdapter(this, list);
         mMenusLayout.setAdapter(menusAdapter);
 
